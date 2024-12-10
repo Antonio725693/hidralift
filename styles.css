@@ -1,0 +1,426 @@
+/* RESET BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;  /* Fondo blanco */
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(120deg, #00c4cc, #00b3b3);  /* Color azul */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: fadeInDown 1.5s ease-out;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+header button {
+    background-color: #00c4cc;  /* Azul */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+header button:hover {
+    background-color: #00b3b3;  /* Azul más oscuro */
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 150px;  /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Producto */
+#producto {
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+#producto h2 {
+    font-size: 2rem;
+    color: #00c4cc;  /* Azul */
+    margin-bottom: 30px;
+}
+
+#producto p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* Imagen del Producto */
+.producto-img {
+    width: 70%;
+    max-width: 600px; /* Ajusta según lo necesites */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00c4cc;  /* Azul */
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease-out;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* MISSION & VISION */
+.mision, .vision {
+    background: #e0f7f7;  /* Azul muy suave para combinar con el esquema de color */
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.mision h3, .vision h3 {
+    font-size: 1.5rem;
+    color: #00c4cc;  /* Azul */
+    margin-bottom: 15px;
+}
+
+/* DETAIL SECTIONS */
+.problema-detalles, .justificacion-detalles, .mercadotecnia-detalles,
+.mercado-detalles, .competidor-detalles, .ventaja-detalles, .canal-detalles {
+    background: #e0f7f7;  /* Azul muy suave para combinar con el esquema de color */
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* LISTS */
+ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+li {
+    font-size: 1rem;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+/* COMPETITORS */
+.competidor-detalles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.competidor {
+    background: #00c4cc;  /* Azul */
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.competidor:hover {
+    transform: translateY(-10px);
+}
+
+.competidor-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.competidor-img:hover {
+    transform: scale(1.05);
+}
+
+.competidor p {
+    font-size: 1rem;
+    color: #fff;  /* Blanco */
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.competidor a {
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.competidor a:hover {
+    color: #ff6666;
+}
+
+/* Ventaja Competitiva */
+.ventaja-detalles {
+    background: #e0f7f7;  /* Azul muy suave para combinar con el esquema de color */
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    animation: fadeInUp 1.5s ease-out;
+    text-align: left;
+}
+
+.ventaja-detalles p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.ventaja-detalles p:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00c4cc;  /* Azul */
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Canal de Distribución */
+.canal-detalles {
+    background: #e0f7f7;  /* Azul muy suave para combinar con el esquema de color */
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    animation: fadeInUp 1.5s ease-out;
+    text-align: left;
+}
+
+.canal-detalles p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.canal-detalles p:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00c4cc;  /* Azul */
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Mercado Meta */
+.mercado-detalles {
+    background: #e0f7f7;  /* Azul muy suave para combinar con el esquema de color */
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    animation: fadeInUp 1.5s ease-out;
+    text-align: left;
+}
+
+.mercado-detalles p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.mercado-detalles p:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00c4cc;  /* Azul */
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Mercadotecnia */
+.mercadotecnia-detalles {
+    background: #e0f7f7;  /* Azul muy suave para combinar con el esquema de color */
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    animation: fadeInUp 1.5s ease-out;
+    text-align: left;
+}
+
+.mercadotecnia-detalles p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.mercadotecnia-detalles p:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00c4cc;  /* Azul */
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Número en las estrategias */
+.mercadotecnia-detalles p strong {
+    font-weight: bold;
+    color: #00c4cc;  /* Azul */
+}
+
+/* Problemática y Justificación */
+.problema-detalles, .justificacion-detalles {
+    background: #e0f7f7;  /* Azul muy suave para combinar con el esquema de color */
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    animation: fadeInUp 1.5s ease-out;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00c4cc;  /* Azul */
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.problema-detalles p, .justificacion-detalles p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.problema-detalles p:last-child, .justificacion-detalles p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #00c4cc;  /* Fondo azul claro */
+    color: white;  /* Color del texto blanco */
+    padding: 30px 20px;  /* Espaciado dentro del footer */
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Texto dentro del footer */
+footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Estilos para los iconos de redes sociales */
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    font-size: 2rem;  /* Tamaño de los iconos */
+    color: white;     /* Color blanco para los iconos */
+    margin: 0 15px;   /* Espaciado entre los iconos */
+    transition: color 0.3s ease;  /* Transición para color al pasar el mouse */
+}
+
+footer .social-icons a:hover {
+    color: #f78fb3;  /* Color de los iconos al pasar el ratón (puedes cambiarlo a otro) */
+}
+
+/* Asegurarnos de que el footer siempre esté en la parte inferior */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
